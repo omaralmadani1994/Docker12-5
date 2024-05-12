@@ -1,0 +1,12 @@
+version: "3"
+services:
+  node-app:
+    volumes:
+      - ./src:/app/src:ro
+    ports:
+      - 3000:4000
+    build:
+      context: .
+      target: devlopment
+    environment:
+      - node_env=devlopment    

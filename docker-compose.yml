@@ -1,0 +1,8 @@
+version: "3"
+services:
+  node-app:
+    container_name: con1
+    volumes:
+      - ./src:/app/src:ro
+    
+    build: .
